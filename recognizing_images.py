@@ -3,12 +3,11 @@ import os
 import PIL
 import PIL.Image
 import tensorflow as tf
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 
 '''
 1. Fetching data from image
-2. Creating a model
-
+This program is used to detect letter from text and convert it into data 
 '''
 
 
@@ -17,7 +16,7 @@ text_detection_model = load_model("path/to/text_detection_model")
 text_recognition_model = load_model("path/to/text_recognition_model")
 
 # Read the image into memory.
-image = tf.keras.preprocessing.image.load_img("path/to/image")
+image = tf.keras.preprocessing.image.load_img("test.jpeg")
 
 # Detect the text in the image.
 text_boxes = text_detection_model.predict(image)
