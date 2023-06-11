@@ -2,12 +2,12 @@ import os
 import cv2
 import numpy as np
 from sklearn.model_selection import train_test_split
-from tensorflow.keras import layers, models
+from keras import layers, models
 from sklearn.preprocessing import LabelEncoder
 from itertools import permutations
 
 # Specify the path to the dataset directory
-dataset_path = "D:\Programming\Hackathon\dataset"
+dataset_path = "dataset"
 
 # Generate all permutations of the characters in "UNICUS"
 permutations_list = list(permutations("UNICUS"))
