@@ -9,10 +9,6 @@ def recognize(path):
     text = tess.image_to_string(img)
     return text
 
-def recognize_single_letter(image_path):
-    img = Image.open(image_path)
-    text = tess.image_to_string(img, config='--psm 10 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-    return text.strip()
 '''
 print(recognize("test.jpg"))
 print(recognize("test2.jpg"))
@@ -24,4 +20,4 @@ print(recognize("cameraphoto.jpg"))
 print(recognize("test7.jpg"))
 '''
 
-print(recognize("cameraphoto.jpg"))
+print(recognize("test.jpg"))
