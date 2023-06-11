@@ -4,10 +4,10 @@ from pytesseract import pytesseract
 
 pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-def recognize(path):
-    img = Image.open(path)
-    text = tess.image_to_string(img)
-    return text
+path = "test.jpg"
+img = Image.open(path)
+text = pytesseract.image_to_string(img)
+print(text)
 
 '''
 print(recognize("test.jpg"))
@@ -20,4 +20,3 @@ print(recognize("cameraphoto.jpg"))
 print(recognize("test7.jpg"))
 '''
 
-print(recognize("test.jpg"))

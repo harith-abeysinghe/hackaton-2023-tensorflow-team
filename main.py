@@ -25,7 +25,7 @@ def recognize_text(image):
     return text
 
 # Read the image
-image = cv2.imread('test.png')
+image = cv2.imread('test.jpg')
 
 # Preprocess the image for the model
 processed_image = preprocess_image(image)
