@@ -23,5 +23,5 @@ print(recognize("test6.jpg"))
 print(recognize("cameraphoto.jpg"))
 print(recognize("test7.jpg"))
 '''
-print(recognize_single_letter("test2.jpg"))
 
+print(recognize("cameraphoto.jpg"))
